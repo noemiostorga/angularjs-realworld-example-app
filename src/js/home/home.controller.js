@@ -3,8 +3,8 @@ class HomeCtrl {
     'ngInject';
 
     this.appName = AppConstants.appName;
-    this.random = AppConstants.random;
 
+  
   }
 
 
