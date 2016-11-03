@@ -1,5 +1,5 @@
 const AppConstants = {
-  api: 'http://conduit.productionready.io/app',
+  api: 'https://conduit.productionready.io/api',
   jwtKey: 'jwtToken',
   appName: 'Conduit',
   random: 'random',

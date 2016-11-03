@@ -27,7 +27,7 @@ const requires = [
   'app.profile',
   'app.article',
   'app.services',
-  'app.auth',
+  'app.auth'
 ];
 
 // Mount on window for testing
