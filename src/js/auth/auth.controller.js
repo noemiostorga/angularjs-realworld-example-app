@@ -1,5 +1,5 @@
 class AuthCtrl {
-  constructor(User, $state) {
+  constructor( User, $state) {
     'ngInject';
 
     this._User = User;
@@ -19,6 +19,7 @@ class AuthCtrl {
   		},
   		//callback for failure 
   		(err) => {
+
   			this.isSubmitting = false;
   			this.errors = err.data.errors;
   		}

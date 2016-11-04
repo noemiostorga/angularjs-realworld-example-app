@@ -1,7 +1,8 @@
 export default class User {
-   constructor(AppConstants, $http) {
+   constructor(JWT, AppConstants, $http) {
     'ngInject';
 
+     this._JWT = JWT;
      this._AppConstants = AppConstants;
      this._$http = $http;
 
@@ -20,6 +21,7 @@ export default class User {
   	}).then(
   	//on success
   		(res) => {
+        this._JWT.save(res.data.user.token);
   			this.current = res.data.user;
 
   			return res;
